@@ -5,11 +5,11 @@ int main() {
     int first_num;
     int second_num;
 
-    printf("Enter first number: ");
-    scanf("%d", &first_num);
+    // printf("Enter first number: ");
+    // scanf("%d", &first_num);
 
-    printf("Enter second number: ");
-    scanf("%d", &second_num);
+    // printf("Enter second number: ");
+    // scanf("%d", &second_num);
 
     int sum = first_num + second_num;
 

@@ -1,10 +1,18 @@
 #include<stdio.h>
+#include<string.h>
 
 int main() {
     int age;
     float marks;
     char grade;
-    
+    char name[50] ;
+
+    printf("Enter your name: ");
+    // scanf("%s", name);
+    fgets(name, sizeof(name), stdin);
+    // Remove newline char added by fgets
+    name[strcspn(name, "\n")] = '\0';
+
     printf("Enter your age: ");
     scanf("%d", &age);
 
@@ -14,6 +22,6 @@ int main() {
     printf("Enter your grade: "); 
     scanf(" %c", &grade);
 
-    printf("Age = %d, Marks = %.2f, Grade = %c", age, marks, grade);
+    printf("Name = %s, Age = %d, Marks = %.2f, Grade = %c", name, age, marks, grade);
     return 0;
 }
