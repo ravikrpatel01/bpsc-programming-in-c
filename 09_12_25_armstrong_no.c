@@ -37,8 +37,9 @@ int main() {
 
     if (num == sum) {
         printf("This is an Armstrong number.");
-    } else
+    } else {
         printf("This is not an Armstrong number.");
+    }
 
     return 0;
 }
