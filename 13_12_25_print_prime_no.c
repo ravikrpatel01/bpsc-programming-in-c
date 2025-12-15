@@ -14,10 +14,9 @@ int main() {
                 break;
             }
         }
-        if (flag == 1) {
+        if (flag != 1) {
             printf("%d ", i);
         }
     }
-
     return 0;
 }

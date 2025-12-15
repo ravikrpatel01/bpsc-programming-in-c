@@ -54,7 +54,7 @@ int main() {
                 printf("Division Result = %.2f\n", result);
                 break;
 
-            case 5: {
+            case 5:
                 printf("Enter two numbers: ");
                 scanf("%d %d", &num1, &num2);
 
@@ -66,7 +66,6 @@ int main() {
                 int rem = num1 % num2;
                 printf("Remainder Result = %d\n", rem);
                 break;
-            }
 
             case 6:
                 printf("Thanks for using Calculator!\n");
