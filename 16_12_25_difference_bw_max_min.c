@@ -11,15 +11,18 @@ int main() {
     for (int i = 0; i < size; i++) {
         scanf("%d", &arr[i]);
     }
-    printf("Array Elements: \n");
-    for (int i = 0; i < size; i++) {
-        printf("%d ", arr[i]);
+
+    int max = arr[0];
+    int min = arr[0];
+
+    for (int i = 1; i < size; i++) {
+        if (arr[i] > max) {
+            max = arr[i];
+        } else if (arr[i] < min) {
+            min = arr[i];
+        }
     }
 
-    printf("\nArray Elements in reverse order: \n");
-    for (int i = size - 1; i >= 0; i--) {
-        printf("%d ", arr[i]);
-    }
-
+    printf("Difference b/w max & min = %d", max - min);
     return 0;
 }

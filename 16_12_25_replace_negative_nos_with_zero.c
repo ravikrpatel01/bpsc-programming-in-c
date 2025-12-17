@@ -11,13 +11,21 @@ int main() {
     for (int i = 0; i < size; i++) {
         scanf("%d", &arr[i]);
     }
-    printf("Array Elements: \n");
+
+    printf("Entered Array Elements: ");
     for (int i = 0; i < size; i++) {
         printf("%d ", arr[i]);
     }
 
-    printf("\nArray Elements in reverse order: \n");
-    for (int i = size - 1; i >= 0; i--) {
+    // Logic to replace -ve nos. with 0
+    for (int i = 0; i < size; i++) {
+        if (arr[i] < 0) {
+            arr[i] = 0;
+        }
+    }
+    
+    printf("\nReplaced Array Elements: ");
+    for (int i = 0; i < size; i++) {
         printf("%d ", arr[i]);
     }
 
