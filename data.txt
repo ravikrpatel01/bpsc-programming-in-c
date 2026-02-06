@@ -1,0 +1,4 @@
+Name: Shristy Kumari
+Age: 18
+Course: BCA (Bachelor of Computer Applications)
+Email: shirsty@gmail.com

@@ -1,16 +1,16 @@
 #include <stdio.h>
 
-struct Student {
+typedef struct Student {
     int roll_no;
     char name[50];
     char email[50];
     char gender;
     int age;
     float marks;
-};
+} Student;
 
 // Function to take input
-void getStudentDetails(struct Student *std) {
+void getStudentDetails(struct Student* std) {
     printf("Enter roll no: ");
     scanf("%d", &std->roll_no);
 
@@ -42,7 +42,9 @@ void printStudentDetails(struct Student std) {
 }
 
 int main() {
-    struct Student s1, s2;
+    Student s1;
+    Student s2;
+    Student s3;
 
     getStudentDetails(&s1);
     getStudentDetails(&s2);
